@@ -21,7 +21,7 @@ const galleryItems = images.reduce((acc, item) => {
     galleryListImg.classList.add('gallery__img');
 
     galleryListLink.href = item.original;
-    galleryListImg.href = item.preview;
+    galleryListImg.src = item.preview;
     galleryListImg.dataset.source = item.original;
     galleryListImg.alt = item.description;
 
